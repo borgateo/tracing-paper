@@ -362,6 +362,9 @@ video {
 
 /* --------------- */
 
+html, body {
+	overflow: hidden;
+}
 
 .container {
 	text-align: center;
@@ -372,7 +375,6 @@ video {
 	right: 0;
 	border: 1px solid #C2C2C2;
 	box-shadow: 0 0 5px #121212;
-	margin: 2px;
 	min-height: 300px;
 }
 

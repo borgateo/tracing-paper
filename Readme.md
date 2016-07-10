@@ -1,18 +1,19 @@
 
-# Trace Paper App
+# Tracing Paper
 
-Pixel perfection: every element in the design mockup will be exactly as you intend it to be in the finished site.
+*Pixel perfection*: every element in the design mockup will be exactly as you intend it to be in the finished site.
 
 ## Contains
 
-- [x] [Webpack](https://webpack.github.io)
-- [x] [React](https://facebook.github.io/react/)
-- [x] [Redux](https://github.com/reactjs/redux)
-- [x] [Babel](https://babeljs.io/)
-- [x] [Autoprefixer](https://github.com/postcss/autoprefixer)
-- [x] [PostCSS](https://github.com/postcss/postcss)
-- [x] [CSS modules](https://github.com/outpunk/postcss-modules)
-- [x] [Rucksack](http://simplaio.github.io/rucksack/docs)
+- [Electron](https://electron.atom.io)
+- [Webpack](https://webpack.github.io)
+- [React](https://facebook.github.io/react/)
+- [Redux](https://github.com/reactjs/redux)
+- [Babel](https://babeljs.io/)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+- [PostCSS](https://github.com/postcss/postcss)
+- [CSS modules](https://github.com/outpunk/postcss-modules)
+- [Rucksack](http://simplaio.github.io/rucksack/docs)
 
 ## Setup
 

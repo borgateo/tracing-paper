@@ -2,14 +2,16 @@
   position: relative;
   padding: 5px;
   text-align: center;
+  overflow: scroll;
+  height: 100%;
 }
 
 .placeholder {
-	border: 4px dashed #CCC;
-	padding: 25px;
+	border: 5px dashed white;
 	min-height: 250px;
 	width: 100%;
 	background-color: #EFEFEF;
+	opacity: .75;
 }
 
 button.btn {

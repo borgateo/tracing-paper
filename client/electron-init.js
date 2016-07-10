@@ -13,11 +13,14 @@ let mainWindow = null
 function createWindow() {
 	const options = {
     width: 800
-  , height: 600
+  , height: 420
   , autoHideMenuBar: false
   , useContentSize: true
   , frame: false
   , transparent: true
+  , alwaysOnTop: true
+  , title: "Tracing Paper"
+  , icon: `${__dirname}/icon/pencil.png`
   }
 
   // Create the browser window.
@@ -27,7 +30,7 @@ function createWindow() {
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
   mainWindow.focus()
 
   // Emitted when the window is closed.
