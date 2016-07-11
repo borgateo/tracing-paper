@@ -45,7 +45,6 @@ button.btn {
   background-color: #f36;
   background-image: none;
   touch-action: manipulation;
-  text-transform: uppercase;
 }
 
 .container section:hover button.btn {

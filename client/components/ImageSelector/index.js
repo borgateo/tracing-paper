@@ -55,14 +55,30 @@ class ImageSelector extends Component {
       <div>
         <ViewSelector />
 
-        <div className={style.container}>
+        <div 
+          className={style.container}
+          onDrop={e => {
+            e.preventDefault();
+            const file = e.dataTransfer.files[0];
+            this.setState({ imageSrc: file.path })
+            return false;
+          }}
+          onDragLeave={e => {
+            return false;
+          }}
+          onDragOver={e => {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }}
+        >
 
           <section className={showImage}>
             <div className={imgContainerClass}>
             	{this.renderImage()}
             </div>
             <button className={style.btn} onClick={::this.handleClick}>
-              Select an image
+              DRAG &amp; DROP<br/>your mockups, or Browse
             </button>
           </section>
 
