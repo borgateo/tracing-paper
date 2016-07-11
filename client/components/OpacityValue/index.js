@@ -6,15 +6,15 @@ import style from './style.css'
 
 const OpacityValue = ({ opacity }) => (
   <div className={style.opacityvalue}>
-  	<p>
-    	Opacity {opacity}%
-  	</p>
-  	<OpacityButtons />
+    <p>
+      Opacity {opacity}%
+    </p>
+    <OpacityButtons />
   </div>
 )
 
 OpacityValue.propTypes = {
-	opacity: PropTypes.number.isRequired
+  opacity: PropTypes.number.isRequired
 }
 
 export default OpacityValue

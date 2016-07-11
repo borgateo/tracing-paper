@@ -1,20 +1,14 @@
 
-const tracingPaper = ( state = 100, action ) => {
+import { combineReducers } from 'redux'
+import opacity from './opacity'
+import view from './view'
+import iframe from './iframe'
 
-	console.log('action', action, state)
-
-  switch ( action.type ) {
-    case 'INCREMENT_OPACITY':
-    	if ( state >= 100 ) { return state }
-      return state + 5
-    case 'DECREMENT_OPACITY':
-    	if ( state <= 0 ) { return state }
-      return state - 5
-    default:
-      return state
-  }
-
-}
+const tracingPaper = combineReducers({
+  opacity,
+  view,
+  iframe
+})
 
 
 export default tracingPaper

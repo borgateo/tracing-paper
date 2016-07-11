@@ -4,7 +4,9 @@ import ImageSelector from '../../components/ImageSelector'
 
 const mapStateToProps = ( state ) => {
   return {
-    opacity: state
+    opacity: state.opacity,
+    view: state.view,
+    iframe: state.iframe
   }
 }
 

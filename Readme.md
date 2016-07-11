@@ -3,6 +3,9 @@
 
 *Pixel perfection*: every element in the design mockup will be exactly as you intend it to be in the finished site.
 
+![gif](https://dl.dropboxusercontent.com/u/1089758/demo.gif?dl=0)
+
+
 ## Contains
 
 - [Electron](https://electron.atom.io)

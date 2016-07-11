@@ -3,6 +3,10 @@ import React, { Component, PropTypes } from 'react'
 import classnames from 'classnames'
 import style from './style.css'
 
+import ViewSelector from '../../components/ViewSelector'
+import Iframe from '../../components/Iframe'
+
+
 const {remote} = require('electron')
 const mainProcess = remote.require('./electron-init')
 
@@ -25,7 +29,7 @@ class ImageSelector extends Component {
 
 	renderImage() {
     const { opacity } = this.props
-    var divStyle = {
+    let divStyle = {
       opacity: opacity / 100
     };
 
@@ -37,28 +41,44 @@ class ImageSelector extends Component {
   }
 
   render() {
+    const { opacity, view, iframe } = this.props
+
+    let showImage = view === 'SHOW_IMAGE' ? style.show : ''
+    let showIframe = view === 'SHOW_IFRAME' ? style.show : ''
+    
     let imgContainerClass = '';
     if ( this.state.imageSrc === '' ) {
       imgContainerClass = style.placeholder;
     }
 
     return (
-      <section className={style.main}>
-        <div className={imgContainerClass}>
-        	{this.renderImage()}
+      <div>
+        <ViewSelector />
+
+        <div className={style.container}>
+
+          <section className={showImage}>
+            <div className={imgContainerClass}>
+            	{this.renderImage()}
+            </div>
+            <button className={style.btn} onClick={::this.handleClick}>
+              Select an image
+            </button>
+          </section>
+
+          <section className={showIframe}>
+            <Iframe opacity={opacity} iframe={iframe}/>
+          </section>
+
         </div>
-        <div>
-          <button className={style.btn} onClick={::this.handleClick}>
-            Select an image...
-          </button>
-        </div>
-      </section>
+      </div>
     )
   }
 }
 
 ImageSelector.propTypes = {
-  opacity: PropTypes.number.isRequired
+  opacity: PropTypes.number.isRequired,
+  view: PropTypes.string.isRequired
 }
 
 export default ImageSelector

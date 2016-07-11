@@ -3,7 +3,7 @@ import OpacityValue from '../../components/OpacityValue'
 
 const mapStateToProps = ( state ) => {
   return {
-    opacity: state
+    opacity: state.opacity
   }
 }
 

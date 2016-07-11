@@ -1,12 +1,12 @@
 .buttons {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .buttons button {
-  font-family: sans-serif;
-  width: 55px;
+  font-weight: bold;
+  width: 95px;
   height: 55px;
   padding: 5px 15px;
   cursor: pointer;
@@ -15,7 +15,6 @@
   white-space: nowrap;
   color: #fff;
   background-color: #f36;
-
   touch-action: manipulation;
 }
 

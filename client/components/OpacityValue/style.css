@@ -1,9 +1,10 @@
 .opacityvalue {
 	text-align: center;
 	font-size: 30px;
+	color: white;
 }
 
 .opacityvalue p {
-	background-color: #d9edf7;
-	padding: 10px 0;
+	background-color: #323a45;
+	padding: 8.5px 0;
 }
