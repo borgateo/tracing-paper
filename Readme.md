@@ -1,7 +1,7 @@
 
 # Tracing Paper
 
-*Pixel perfection*: every element in the design mockup will be exactly as you intend it to be in the finished site.
+An app that transforms your static mockup image into a semi-transparent (opacity configurable) and draggable window that overlaps your WIP web pages. Every element in the design mockup will be exactly as you intend it to be in the finished site. Pixel Perfect FTW 💪
 
 ![gif](https://dl.dropboxusercontent.com/u/1089758/demo.gif?dl=0)
 
