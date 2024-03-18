@@ -1,5 +1,5 @@
 
-# Tracing Paper
+# Tracing Paper - Visually Align with Ease
 
 An app that transforms your static mockup image into a semi-transparent (opacity configurable) and draggable window that overlaps your WIP web pages. Every element in the design mockup will be exactly as you intend it to be in the finished site. Pixel Perfect FTW 💪
 
@@ -43,3 +43,7 @@ $ npm run build
 # License
 
 MIT
+
+# Notes
+
+Origial idea - GluePrint App
